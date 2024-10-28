@@ -1,0 +1,30 @@
+.env
+.env.local
+# Arquivos de estado do Terraform
+*.tfstate
+*.tfstate.*
+
+# Logs de erro do Terraform
+crash.log
+
+# Diretório de cache do Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Planos de execução do Terraform
+*.tfplan
+
+# Arquivos de variáveis locais, que podem conter dados sensíveis
+*.tfvars
+*.tfvars.json
+
+# Backup de arquivos de variáveis
+*.tfvars.backup
+
+# Configurações do editor de texto
+.vscode/
+.idea/
+
+# Arquivos de sistema (macOS, Linux e Windows)
+.DS_Store
+Thumbs.db

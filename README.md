@@ -48,16 +48,11 @@ Crie um arquivo `main.tf` e importe o módulo da seguinte forma:
 
 ```hcl
 module "eks_cluster" {
-  source  = "github.com/seu-usuario/modulo-terraform-aws-eks"
-  cluster_name = "my-cluster"
-  region       = "us-east-1"
-  vpc_id       = "vpc-123456"
-  subnets      = ["subnet-12345", "subnet-67890"]
+  source  = "github.com/pravtz/terraform-aws-eks"
+
 
   # Parâmetros adicionais
-  desired_capacity = 3
-  min_size         = 1
-  max_size         = 5
+
 }
 ```
 
